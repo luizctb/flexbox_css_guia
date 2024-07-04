@@ -2,6 +2,7 @@
 
 import styled from "styled-components";
 
+// component pai
 export const Container = styled.div`
   display: flex;
   gap: 10px;
