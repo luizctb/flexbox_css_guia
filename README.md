@@ -40,8 +40,9 @@ export const Container = styled.div`
   }
   
 ----------------------------------
-# COMPONENT PAI
-## flex-direction: column;
+# COMPONENTE PAI (PARENT COMPONENT)
+
+## display: flex;
 ![flex-direction: column](image.png)
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -65,7 +66,8 @@ export const Container = styled.div`
   }  
 `;
 
-* result: flex direction column
+----------------------------------
+## result: flex direction column
 
 ![flex Direction Colum](image-1.png)
 
@@ -165,7 +167,8 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 ###################################################
 
-# COMPONENT FILHOS "children"
+# COMPONENTE FILHO (CHILDREN COMPONENT)
+
 * quando estiliza somente o componente filho através de id por exemplo:
 
 <Container>
