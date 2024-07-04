@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BASE STUDIES
 
-## Getting Started
+## Display: flex
 
-First, run the development server:
+* base código tsx:
+"use client";
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+import React from "react";
+import { Container } from "./CardStyles";
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+const FlexBoxTutorial: React.FC<{}> =() => {
+   return (
+    <Container>
+      <div>item 001</div>
+      <div>item 002</div>
+      <div>item 003</div>
+      <div>item 004</div>
+    </Container>    
+   )
+};
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+export default FlexBoxTutorial;
+----------------------------------
+* Styled components:
+"use client";
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+import styled from "styled-components";
 
-## Learn More
+export const Container = styled.div`
+  display: flex;
+  background-color: #898989;
 
-To learn more about Next.js, take a look at the following resources:
+  div {
+    flex: 1;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;  
+    background-color: #1b933f;
+  }
+  
+----------------------------------
+* result:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
