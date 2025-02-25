@@ -20,7 +20,7 @@ const FlexBoxTutorial: React.FC<{}> =() => {
 };
 
 export default FlexBoxTutorial;
-----------------------------------
+-------------------------------
 * Styled components:
 "use client";
 
